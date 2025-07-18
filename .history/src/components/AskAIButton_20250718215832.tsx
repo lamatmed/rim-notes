@@ -16,7 +16,7 @@ import { Textarea } from "./ui/textarea";
 import { ArrowUpIcon } from "lucide-react";
 import { askAIAboutNotesAction } from "@/actions/notes";
 import "@/styles/ai-response.css";
-
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 type Props = {
   user: User | null;
