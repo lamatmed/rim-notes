@@ -10,6 +10,7 @@ import { Button } from "./ui/button";
 import { Loader2 } from "lucide-react";
 import Link from "next/link";
 import { loginAction, signUpAction } from "@/actions/users";
+import { shadow } from "@/styles/utils";
 
 type Props = {
   type: "login" | "signUp";
@@ -48,7 +49,7 @@ function AuthForm({ type }: Props) {
   };
 
   return (
-    <form action={handleSubmit} >
+    <form action={handleSubmit} style={{ boxShadow: shadow }}>
       <CardContent className="grid w-full items-center gap-4">
         <div className="flex flex-col space-y-1.5">
           <Label htmlFor="email">E-mail</Label>

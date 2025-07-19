@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import AppSidebar from "@/components/AppSidebar";
 import NoteProvider from "@/providers/NoteProvider";
-import Footer from "@/components/Footer";
 
 
 
@@ -46,9 +45,21 @@ export default function RootLayout({
             </SidebarProvider>
 
             <Toaster />
-          
+           
 
-            <Footer />
+            <footer className="w-full border-t bg-background py-4 mt-8 text-center text-xs text-muted-foreground">
+              <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 px-4">
+                <span>GOAT Notes © {new Date().getFullYear()}</span>
+                <a
+                  href="https://github.com/lamatmed/rim-notes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline text-blue-500"
+                >
+                  Code source sur GitHub
+                </a>
+              </div>
+            </footer>
 
           </NoteProvider>
         </ThemeProvider>

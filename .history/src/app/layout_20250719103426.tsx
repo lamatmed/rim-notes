@@ -46,7 +46,7 @@ export default function RootLayout({
             </SidebarProvider>
 
             <Toaster />
-          
+            <MagicLinkHandler />
 
             <Footer />
 

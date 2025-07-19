@@ -48,7 +48,7 @@ function AuthForm({ type }: Props) {
   };
 
   return (
-    <form action={handleSubmit} >
+    <form action={handleSubmit} style={{ boxShadow: shadow }}>
       <CardContent className="grid w-full items-center gap-4">
         <div className="flex flex-col space-y-1.5">
           <Label htmlFor="email">E-mail</Label>

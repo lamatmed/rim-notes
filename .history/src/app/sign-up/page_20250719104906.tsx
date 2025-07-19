@@ -1,6 +1,5 @@
 import AuthForm from "@/components/AuthForm";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
-import { shadow } from "@/styles/utils";
 
 function SignUpPage() {
   return (
